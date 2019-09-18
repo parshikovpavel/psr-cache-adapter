@@ -1,0 +1,30 @@
+{
+    "name": "parshikovpavel/psr-cache-adapter",
+    "description": "Adapter-decorator to cast a PSR-6 pool implementation to the PSR-16 simple cache interface",
+    "keywords": ["cache", "array", "psr-6", "psr-16", "psr6", "psr16", "adapter", "simple cache"],
+    "homepage": "https://github.com/parshikovpavel/psr-cache-adapter",
+    "authors": [
+        {
+            "name": "Pavel Parshikov",
+            "email": "paw-p@yandex.ru",
+            "role": "Author"
+        }
+    ],
+    "support": {
+        "email": "paw-p@yandex.ru"
+    },
+    "readme": "https://github.com/parshikovpavel/psr-cache-adapter/blob/master/README.md",
+    "require": {
+        "php": "^7.1",
+        "psr/cache": "^1.0",
+        "psr/simple-cache": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ppCache\\": ["src/", "tests/"]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7"
+    }
+}
