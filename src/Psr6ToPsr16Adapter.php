@@ -33,7 +33,7 @@ final class Psr6ToPsr16Adapter implements CacheInterface
             public function __call($name, $arguments)
             {
                 try {
-                    $this->pool->$name(...$arguments);
+                    return $this->pool->$name(...$arguments);
                 } catch (\Psr\Cache\InvalidArgumentException $e) {
                     throw new InvalidArgumentException($e->getMessage(), $e->getCode(), $e);
                 }
