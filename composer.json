@@ -3,6 +3,8 @@
     "description": "Adapter-decorator to cast a PSR-6 pool implementation to the PSR-16 simple cache interface",
     "keywords": ["cache", "array", "psr-6", "psr-16", "psr6", "psr16", "adapter", "simple cache"],
     "homepage": "https://github.com/parshikovpavel/psr-cache-adapter",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Pavel Parshikov",
