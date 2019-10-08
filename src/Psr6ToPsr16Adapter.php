@@ -22,7 +22,7 @@ final class Psr6ToPsr16Adapter implements CacheInterface
      */
     public function __construct(CacheItemPoolInterface $pool)
     {
-        $this->pool = new class($pool) {
+        $this->pool = new class ($pool) {
             private $pool;
 
             public function __construct(CacheItemPoolInterface $pool)
@@ -39,7 +39,7 @@ final class Psr6ToPsr16Adapter implements CacheInterface
                 }
             }
         };
-}
+    }
 
     /**
      * @inheritDoc
@@ -159,7 +159,7 @@ final class Psr6ToPsr16Adapter implements CacheInterface
      * An iterable parameter must be either an array or a Traversable
      * otherwise `InvalidArgumentException` is thrown
      *
-     * @param $iterable The iterable parameter
+     * @param mixed $iterable The iterable parameter
      * @throws InvalidArgumentException Thrown if the iterable parameter is invalid
      * @return void
      */
@@ -169,9 +169,4 @@ final class Psr6ToPsr16Adapter implements CacheInterface
             throw new InvalidArgumentException('Invalid iterable parameter');
         }
     }
-
-
-
-
-
 }
